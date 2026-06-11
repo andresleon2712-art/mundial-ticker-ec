@@ -68,9 +68,9 @@ mundial-ticker-ec/
 ├── .github/
 │   └── workflows/
 │       └── update-data.yml   ← cron job de GitHub Actions
-│   ├── ticker.html           ← el ticker embebible
-│   └── data.json             ← datos generados automáticamente
-├── fetch-data.js             ← script que llama a football-data.org
+├── ticker.html ← el ticker embebible
+└── data.json ← datos generados automáticamente
+├── fetch-data.js ← script que llama a football-data.org
 └── README.md
 ```
 
