@@ -1,0 +1,37 @@
+name: Actualizar datos Mundial 2026
+
+on:
+  schedule:
+    # Corre cada minuto durante el torneo (Jun 11 - Jul 19, 2026)
+    - cron: '* * * * *'
+  workflow_dispatch: # permite correrlo manualmente también
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # necesario para hacer commit al repo
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch datos del Mundial
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: node fetch-data.js
+
+      - name: Commit y push data.json si cambió
+        run: |
+          git config user.name "mundial-bot"
+          git config user.email "bot@elcolombiano.com"
+          git add public/data.json
+          # Solo hace commit si hay cambios reales
+          git diff --staged --quiet || git commit -m "🔄 Datos Mundial $(date -u '+%H:%M UTC')"
+          git push
