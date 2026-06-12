@@ -82,7 +82,7 @@ En `ticker.html` puedes ajustar:
 - `speed` (línea ~180): velocidad del scroll en px/segundo. Más alto = más rápido
 - `CHANNELS_COLOMBIA`: canales donde se ve cada partido
 - `REFRESH_MS`: cada cuánto refresca los datos (default: 60 segundos)
-- Colores en el `<style>`: `#D20A11` es el rojo de El Colombiano
+- Colores en el `<style>`: `#adb0ab` es el rojo de El Colombiano
 
 ---
 
