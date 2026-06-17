@@ -16,15 +16,16 @@ jobs:
 
       - name: Fetch y guardar datos
         env:
-          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+         FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
         run: |
           TODAY=$(TZ="America/Bogota" date +%Y-%m-%d)
           YESTERDAY=$(TZ="America/Bogota" date -d "yesterday" +%Y-%m-%d)
+          TOMORROW=$(TZ="America/Bogota" date -d "tomorrow" +%Y-%m-%d)
           curl -s \
             -H "X-Auth-Token: $FOOTBALL_API_KEY" \
-            "https://api.football-data.org/v4/competitions/WC/matches?dateFrom=$YESTERDAY&dateTo=$TODAY" \
+            "https://api.football-data.org/v4/competitions/WC/matches?dateFrom=$YESTERDAY&dateTo=$TOMORROW" \
             -o data.json
-
+            
       - name: Commit y push data.json
         run: |
           git config user.name "mundial-bot"
