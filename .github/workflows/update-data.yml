@@ -5,6 +5,10 @@ on:
     - cron: '* * * * *'
   workflow_dispatch:
 
+defaults:
+  run:
+    working-directory: .
+
 jobs:
   fetch-and-deploy:
     runs-on: ubuntu-latest
@@ -22,7 +26,7 @@ jobs:
       - name: Fetch datos del Mundial
         env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
-        run: node fetch-data.js
+        run: node ./fetch-data.js
 
       - name: Commit y push data.json
         run: |
