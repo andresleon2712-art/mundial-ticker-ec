@@ -14,9 +14,9 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Fetch y guardar datos
+     - name: Fetch y guardar datos
         env:
-         FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
         run: |
           TODAY=$(TZ="America/Bogota" date +%Y-%m-%d)
           YESTERDAY=$(TZ="America/Bogota" date -d "yesterday" +%Y-%m-%d)
