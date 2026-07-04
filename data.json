@@ -1,18 +1,7 @@
 {
   "updatedAt": "2026-07-04T16:00:00Z",
   "date": "2026-07-04",
-  "matches":{
-  "id": 200,
-  "status": "LABEL",
-  "minute": null,
-  "utcDate": "2026-07-04T00:00:00Z",
-  "stage": "LAST_16",
-  "group": null,
-  "homeTeam": { "id": 0, "name": "OCTAVOS DE FINAL", "tla": "OCT", "crest": "" },
-  "awayTeam": { "id": 0, "name": "", "tla": "", "crest": "" },
-  "score": { "fullTime": { "home": null, "away": null }, "halfTime": { "home": null, "away": null } },
-  "venue": ""
-}
+  "matches":}
 
   [
     {
