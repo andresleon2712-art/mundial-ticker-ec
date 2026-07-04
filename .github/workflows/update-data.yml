@@ -2,7 +2,7 @@ name: Actualizar datos Mundial 2026
 
 on:
   schedule:
-#    - cron: '*/5 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-     - name: Fetch y guardar datos
+      - name: Fetch y guardar datos
         env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
         run: |
@@ -25,7 +25,7 @@ jobs:
             -H "X-Auth-Token: $FOOTBALL_API_KEY" \
             "https://api.football-data.org/v4/competitions/WC/matches?dateFrom=$YESTERDAY&dateTo=$TOMORROW" \
             -o data.json
-            
+
       - name: Commit y push data.json
         run: |
           git config user.name "mundial-bot"
