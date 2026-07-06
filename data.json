@@ -1,0 +1,134 @@
+{
+  "updatedAt": "2026-07-06T14:00:00Z",
+  "date": "2026-07-06",
+  "matches": [
+    {
+      "id": 301,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-07-06T19:00:00Z",
+      "stage": "LAST_16",
+      "group": null,
+      "homeTeam": {
+        "id": 1,
+        "name": "Portugal",
+        "tla": "POR",
+        "crest": ""
+      },
+      "awayTeam": {
+        "id": 2,
+        "name": "España",
+        "tla": "ESP",
+        "crest": ""
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "venue": "MetLife Stadium, Nueva York",
+      "channels": "RCN · Caracol · Win+"
+    },
+    {
+      "id": 302,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-07-07T00:00:00Z",
+      "stage": "LAST_16",
+      "group": null,
+      "homeTeam": {
+        "id": 3,
+        "name": "Estados Unidos",
+        "tla": "USA",
+        "crest": ""
+      },
+      "awayTeam": {
+        "id": 4,
+        "name": "Bélgica",
+        "tla": "BEL",
+        "crest": ""
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "venue": "AT&T Stadium, Dallas",
+      "channels": "DirecTV"
+    },
+    {
+      "id": 303,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-07-07T16:00:00Z",
+      "stage": "LAST_16",
+      "group": null,
+      "homeTeam": {
+        "id": 5,
+        "name": "Argentina",
+        "tla": "ARG",
+        "crest": ""
+      },
+      "awayTeam": {
+        "id": 6,
+        "name": "Egipto",
+        "tla": "EGY",
+        "crest": ""
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "venue": "SoFi Stadium, Los Ángeles",
+      "channels": "RCN · Caracol · DirecTV · Win+"
+    },
+    {
+      "id": 304,
+      "status": "TIMED",
+      "minute": null,
+      "utcDate": "2026-07-07T20:00:00Z",
+      "stage": "LAST_16",
+      "group": null,
+      "homeTeam": {
+        "id": 7,
+        "name": "Colombia",
+        "tla": "COL",
+        "crest": ""
+      },
+      "awayTeam": {
+        "id": 8,
+        "name": "Suiza",
+        "tla": "SUI",
+        "crest": ""
+      },
+      "score": {
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "venue": "Arrowhead Stadium, Kansas City",
+      "channels": "RCN · Caracol · DirecTV · Win+"
+    }
+  ]
+}
